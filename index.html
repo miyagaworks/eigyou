@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>営業マスター講座 30日プログラム</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh; color: #fff; padding: 15px;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        header {
+            text-align: center; padding: 30px 15px;
+            background: rgba(255,255,255,0.05); border-radius: 20px; margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 2em;
+            background: linear-gradient(90deg, #f39c12, #e74c3c);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .subtitle { color: #aaa; font-size: 1em; margin: 8px 0 15px; }
+        .stats { display: flex; justify-content: center; gap: 25px; }
+        .stat-num { font-size: 1.8em; font-weight: bold; color: #f39c12; }
+        .stat-label { font-size: 0.8em; color: #888; }
+        .day-card {
+            background: rgba(255,255,255,0.05); border-radius: 15px;
+            padding: 18px; margin-bottom: 18px;
+        }
+        .day-header {
+            display: flex; align-items: center; gap: 12px;
+            margin-bottom: 12px; padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .day-num {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            padding: 6px 14px; border-radius: 18px; font-weight: bold; font-size: 0.85em;
+        }
+        .day-title { font-size: 1.05em; font-weight: bold; }
+        .content-item {
+            display: flex; align-items: center; gap: 10px;
+            padding: 10px 8px; margin-bottom: 6px;
+            background: rgba(255,255,255,0.03); border-radius: 8px;
+        }
+        .content-item:hover { background: rgba(255,255,255,0.08); }
+        .content-item .icon { font-size: 1.1em; }
+        .content-item .title { flex: 1; color: #ddd; font-size: 0.9em; }
+        .tiktok-btn {
+            background: linear-gradient(135deg, #ff0050, #00f2ea);
+            color: white; text-decoration: none;
+            padding: 5px 12px; border-radius: 15px;
+            font-size: 0.7em; font-weight: bold;
+        }
+        footer { text-align: center; padding: 25px; color: #666; font-size: 0.85em; }
+        footer a { color: #3498db; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>営業マスター講座</h1>
+            <p class="subtitle">@eigyou.inui の30日プログラム</p>
+            <div class="stats">
+                <div class="stat"><div class="stat-num">29</div><div class="stat-label">Day</div></div>
+                <div class="stat"><div class="stat-num">96</div><div class="stat-label">コンテンツ</div></div>
+            </div>
+        </header>
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 1</span>
+                <span class="day-title">マインドセット①</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">マインド 売れない営業の考え方</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7366960990627433746" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">営業センス 人の話を聞く</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7401406363080936720" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">営業本おすすめ</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7364701225780055304" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">マインド 気合い編</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7358351528148700434" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 2</span>
+                <span class="day-title">マインドセット②</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">NG集 売れない営業の特徴</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7347532032152538376" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">マインド 最初から売れたわけではない</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7414089404861484306" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 3</span>
+                <span class="day-title">売上の方程式</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">売上の方程式</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7342704475364134162" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">売上 集客と契約率</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7535748548265020680" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 4</span>
+                <span class="day-title">心理学①基礎</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">心理学 権威と6大心理学</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7373589118204382482" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン 購買欲を刺激</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7554543416244210961" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">心理学 ウィンザー効果</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7382204994923138312" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">心理学 社会的証明</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7394730956420140295" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 5</span>
+                <span class="day-title">心理学②応用</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">心理学 5選</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7535777716092833032" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">心理学 ラベリング効果</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7311122904442244354" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">心理学 社会的証明</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7461239447636430087" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">心理学 購買欲を刺激するトーク</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7296408804982263041" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 6</span>
+                <span class="day-title">心理学③シズル</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">シズルを売れ</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7317474777831066882" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 7</span>
+                <span class="day-title">トップセールス</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">トップセールス 引き付ける力</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7488982882229308679" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">トップセールス 共通点</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7337179624339787009" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 8</span>
+                <span class="day-title">アポ取り①</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">アポ取り スクリプト作成</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7473785932366368007" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">飛び込み・テレアポが稼げる理由</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7549361248606096647" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">飛び込み・テレアポが一番</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7347530871357984007" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">飛び込み・テレアポが一番</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7511985255029411090" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 9</span>
+                <span class="day-title">アポ取り②飛び込み</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">訪問販売 最初の入り</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7383585545001127186" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">飛び込み営業 最初の入りトーク</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7311125578931834113" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 10</span>
+                <span class="day-title">自己紹介</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">マジックワード</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7403343348913753360" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">自己紹介 何でも売る営業コンサル</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7386859086849019144" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">自己紹介 営業コンサルタント</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7391764950038940936" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">自己紹介 21年の営業経験</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7366077645882199314" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 11</span>
+                <span class="day-title">ヒアリング①</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング 本音を引き出す</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7544022118493719816" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング 人ごとの使い方</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7433993363277303048" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">雑談 心の扉を開く型</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7575716254728654101" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング 悩みの聞き方</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7301536334089293057" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 12</span>
+                <span class="day-title">ヒアリング②</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング 心の扉を開く</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7488984043032284424" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング アポにつなげる</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7345394911136517394" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング 悩みの聞き方NG</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7317472029266005249" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング 悩みの聞き方NG</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7429522207715446034" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 13</span>
+                <span class="day-title">主導権</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">主導権 相槌テクニック</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7326727017838169345" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">主導権の重要性</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7501307917199609106" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 14</span>
+                <span class="day-title">アポトーク</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">アポトーク 顧客獲得型vs情報満足型</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7329322278506794241" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 15</span>
+                <span class="day-title">プレゼン①</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン トーク作り</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7382202564512697608" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン ゴールデンサークル理論</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7387979469878791432" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン 3流2流1流</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7360884570050333970" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン 利点話法</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7488981440764431634" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 16</span>
+                <span class="day-title">プレゼン②</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン 未来想像</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7437779506666032391" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン 説明ではなく営業</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7394732704031460626" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン 上手い下手</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7471238138870959367" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">プレゼン 3流はメリットだけ話す</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7340093802100591890" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 18</span>
+                <span class="day-title">クロージング①</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 先回り</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7317474333595634945" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 緊張対策</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7575397587776212225" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 苦手の原因</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7370888259225783559" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 勝負の場面</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7530810925771721991" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 19</span>
+                <span class="day-title">クロージング②</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">NG集 先回りトークの間違い</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7421732897255689479" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 苦手克服</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7552106782240410901" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 沈黙への対応</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7359196357925588232" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 苦手克服2</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7480847865363827984" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 20</span>
+                <span class="day-title">クロージング③</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング 即決の重要性</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7461240777813822738" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">クロージング クローザーとは</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7386860307441831175" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">アポ取り クロージング</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7499807280263712018" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">NG集 クロージングお伺い</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7324139502396574978" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 21</span>
+                <span class="day-title">NG集①</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">NG集 1年目のフレッシュさはNG</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7308926762409348353" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">NG集 仲良くなれは嘘</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7334897672479968514" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">NG集 契約取りこぼし</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7557632339266899220" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 予算の聞き方NG</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7511905882192530696" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 22</span>
+                <span class="day-title">切り返し①</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 相見積もり対応</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7306394058237152514" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 相談したい</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7503377264692759816" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 知ってる・今じゃない</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7567184441894767893" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 相見積もり</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7511906398804905224" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 23</span>
+                <span class="day-title">切り返し②</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 今日決めるつもりない</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7396932505451973906" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 相見積もり</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7461238969750031634" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 検討します</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7528691559009635592" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 困ってから</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7567185102657047829" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 24</span>
+                <span class="day-title">切り返し③</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 他でやってる3連発</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7355785000953924872" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 他でやってる3連発</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7334896543188684033" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 相談したいへの対応2</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7337178578032839937" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 今日は決めない</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7314565840412609793" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 25</span>
+                <span class="day-title">切り返し④</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 今すぐじゃない</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7546762692736879880" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 値引きはダメ</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7573622186271870225" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 今すぐじゃない</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7501308844857953543" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 高いと言われた時</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7320424722565532929" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 26</span>
+                <span class="day-title">紹介・追客</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">紹介の取り方</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7314128361473854721" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">自己紹介 営業コンサルタント</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7350174575239466247" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">追客の重要性</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">自己紹介 単価の自信</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7427295055414824199" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 27</span>
+                <span class="day-title">単価アップ</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">高額商品 売り方</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7480868989996993809" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">契約後のフィードバック収集</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7355782161695247623" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 28</span>
+                <span class="day-title">トーク・目的</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">営業 トークの目的と考え方</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7416896703158160647" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ロープレの重要性</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 29</span>
+                <span class="day-title">フルコミ・その他</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">マネジメント 部下の育成</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7387977886826794247" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">フルコミ 個人事業主として</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7423969465647353096" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">ヒアリング NG3つ</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7320433045704592642" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">紹介の取り方 NG</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7567188123097091348" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="day-header">
+                <span class="day-num">Day 30</span>
+                <span class="day-title">総まとめ</span>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">いろんな営業を経験</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7450402454186757384" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">新年挨拶 2025</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7451871655313296647" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">いろんな商材を売る営業</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7445852675024948488" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+                <div class="content-item">
+                    <span class="icon">🎧</span>
+                    <span class="title">切り返し 他でやってる</span>
+                    <a href="https://www.tiktok.com/@eigyou.inui/video/7503379063872982290" target="_blank" class="tiktok-btn">TikTok</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>営業の乾 @eigyou.inui</p>
+            <p><a href="https://www.tiktok.com/@eigyou.inui" target="_blank">TikTokをフォロー</a></p>
+        </footer>
+    </div>
+</body>
+</html>
